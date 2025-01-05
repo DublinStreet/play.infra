@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: playeconomy-tls-cert
+  name: dublinhouse-tls-cert
 spec:
-  secretName: playeconomy-tls
+  secretName: dublinhouse-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - "playeconomy.eastus.cloudapp.azure.com"
+    - "dublinhouse.eastus.cloudapp.azure.com"
